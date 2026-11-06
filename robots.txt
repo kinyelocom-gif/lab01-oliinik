@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ТВОЙ-НИК.github.io/lab01-призвище/sitemap.xml
+Sitemap: https://kinyelocom-gif.github.io/lab01-oliinik/sitemap.xml
