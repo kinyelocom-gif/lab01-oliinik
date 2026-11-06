@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content ="Олійник Микола">
+
+        <title>Стати частиною проєкту</title>
+
+        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+        <meta property="og:title" content="Стати частиною проєкту>
+        <meta property="og:description" content="Заявка на участь в проєкті">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kinyelocom-gif.github.io/">
+        <meta property="og:image" content="https://kinyelocom-gif.github.io/images/og-image.png">
+        <meta property="og:site_name" content="Мови програмування та парадигми">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="description" content="Заявка на участь в проєкті">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list menu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">Про напрям</a></li>
+                <li class="nav__item"><a href="pages/resources.html" class="nav__link">Ресурси</a></li>
+                <li class="nav__item"><a href="comparison.html" class="nav__link">Цікаві таблиці</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
+                <li class="nav__item menu__contacts"><a href="contacts.html" class="nav__link">Контакти</a></li>
+                <li class="nav__item menu__contacts"><a href="applictation.html" class="nav__link nav__link--active" aria-current="page">Стати частиню проєкту</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="media">
+            <span class="media__icon" aria-hidden="true">ⓘ</span>
+            <p class="media__body">
+            Підказка: оцініть складність алгоритму перед реалізацією.
+            </p>
+        </div>
+        <h1>Заявка на участь у проєкті</h1>
+
+        <form class="form" action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Відомості про учасника</legend>
+
+                <label class="form__label field--required" for="fullname">Прізвище та ім'я</label>
+                <input class="form__input" type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required>
+                <br>
+                <br>
+
+                <label class="form__label field--required" for="email">Електронна пошта</label>
+                <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+                <br>
+                <br>
+
+                <label class="form__label field--required" for="email">Електронна пошта</label>
+                <input class="form__input" type="tel" id="phone" name="phone" pattern="\+380[0-9]{9}" title="Формат: +380671234567" autocomplete="tel" required>
+                <br><br>
+
+                
+                <label class="form__label field--required" for="course">Курс навчання</label>
+                <input class="form__input" type="number" id="course" name="course" min="1" max="4" required>
+                <br>
+                <br>
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Рівень підготовки</legend>
+
+                <p class="form__text field--required">Рівень підготовки</p>
+
+                <label class="form__label">
+                    <input class="form__radio" type="radio" name="level" value="beginner" required>
+                    Початковий
+                </label>
+
+                <label class="form__label">
+                    <input class="form__radio" type="radio" name="level" value="middle">
+                    Середній
+                </label>
+
+                <label class="form__label">
+                    <input class="form__radio" type="radio" name="level" value="advanced">
+                    Просунутий
+                </label>
+                <br>
+                <br>
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Параметри проєкту</legend>
+
+                <label class="form__label field--required" for="start-date">Дата початку участі</label>
+                <input class="form__input" type="date" id="start-date" name="start-date" min="2026-09-28" required>
+                <br>
+                <br>
+
+                <p class="form__text">Напрями інтересу</p>
+
+                <label class="form__label">
+                    <input class="form__checkbox" type="checkbox" name="interest" value="web">
+                    Веброзробка
+                </label>
+
+                <label class="form__label">
+                    <input class="form__checkbox" type="checkbox" name="interest" value="games">
+                    Розробка ігор
+                </label>
+
+                <label class="form__label">
+                    <input class="form__checkbox" type="checkbox" name="interest" value="ai">
+                    Штучний інтелект
+                </label>
+
+                <br>
+                <br>
+
+                <label class="form__label field--required" for="stack">Технологічний стек</label>
+
+                <select class="form__select" id="stack" name="stack" required>
+
+                    <optgroup class="form__optgroup" label="Мови програмування">
+                        <option value="python">Python</option>
+                        <option value="cpp">C++</option>
+                        <option value="csharp">C#</option>
+                    </optgroup>
+
+                    <optgroup class="form__optgroup" label="Клієнтські технології">
+                        <option value="js">JavaScript</option>
+                        <option value="typescript">TypeScript</option>
+                    </optgroup>
+
+                    <optgroup class="form__optgroup" label="Вебтехнології">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </optgroup>
+
+                </select>
+
+                <br>
+                <br>
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Додаткові дані</legend>
+
+                <label class="form__label field--required" for="experience">Короткий опис досвіду</label>
+                <br>
+
+                <textarea class="form__textarea" id="experience" name="experience" rows="5" minlength="20" maxlength="500" required></textarea>
+
+                <br>
+                <br>
+
+                <label class="form__label" for="portfolio">
+                    Файл із портфоліо (необов'язково)
+                </label>
+
+                <input class="form__input" type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx" multiple>
+
+                <br>
+                <br>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Розширені елементи керування</legend>
+
+                <label class="form__label" for="language">Улюблена мова програмування</label>
+                <input class="form__input" type="text" id="language" name="language" list="languages">
+
+                <datalist class="form__datalist" id="languages">
+                    <option value="C++">
+                    <option value="C#">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="JavaScript">
+                    <option value="TypeScript">
+                </datalist>
+
+                <br>
+                <br>
+
+                <label class="form__label" for="skill">Рівень навичок програмування</label>
+                <input class="form__range" type="range" id="skill" name="skill" min="0" max="100" value="50">
+
+                <br>
+                <br>
+
+                <label class="form__label" for="learning-progress">Прогрес навчання</label>
+                <progress class="form__progress" id="learning-progress" value="60" max="100">60%</progress>
+
+                <br>
+                <br>
+
+                <label class="form__label" for="knowledge">Рівень знань</label>
+                <meter class="form__meter" id="knowledge" min="0" max="100" value="75">75 зі 100</meter>
+
+                <br>
+                <br>
+            </fieldset>
+
+            <button class="form__button" type="submit">Надіслати заявку</button>
+            <button class="form__button" type="reset">Очистити форму</button>
+            <button class="form__button" type="button" id="preview-btn">Попередній перегляд</button>
+            <br>
+
+        </form>
+        
+    </main>
+
+    <footer>
+        <address>
+            Олійник Микола, група ІПЗ-21<br>
+            <a href="mailto:kinyelocom@gmail.com">kinyelocom@gmail.com</a><br>
+            <a href="tel:+380985699655">+38 (098) 569-96-55</a>
+        </address>
+
+        <p>&copy; 2026 Микола Олійник</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+/* Стилі для друку */
+@media print {
+    body {
+        display: block;
+        color: #000;
+        background: #fff;
+        font-size: 12pt;
+    }
+
+    header,
+    nav,
+    .page__sidebar,
+    .back-to-top,
+    .btn {
+        display: none !important;
+    }
+
+    main,
+    .page__main,
+    .content,
+    .conteiner {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        display: block;
+        min-height: 0;
+    }
+
+    .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        overflow-wrap: anywhere;
+    }
+
+    h1,
+    h2,
+    h3 {
+        break-after: avoid;
+    }
+
+    footer {
+        background: #fff;
+        color: #000;
+    }
+}

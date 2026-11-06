@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ТВОЙ-НИК.github.io/lab01-призвище/sitemap.xml
